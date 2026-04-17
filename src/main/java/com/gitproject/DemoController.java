@@ -13,4 +13,9 @@ public class DemoController {
     public String getMessage(){
         return "Hello learning git";
     }
+
+    @GetMapping("/send")
+    public String sendMessage(){
+        return "Hi";
+    }
 }
