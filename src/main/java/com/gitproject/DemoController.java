@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1")
 public class DemoController {
 
+
     @GetMapping("/message")
     public String getMessage(){
         return "Hello learning git";
@@ -16,6 +17,7 @@ public class DemoController {
 
     @GetMapping("/send")
     public String sendMessage(){
+        System.out.println("Here is the print msg");
         return "Hi";
     }
 }
